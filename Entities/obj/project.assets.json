@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Entities.csproj",
-      "projectName": "Entities",
-      "projectPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj",
+      "projectName": "Core",
+      "projectPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj",
       "packagesPath": "C:\\Users\\Mahesh\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\obj\\",
       "projectStyle": "PackageReference",

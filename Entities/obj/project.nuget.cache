@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ei9Q7cvVeMqKnz6uDdmlwGJu6F2SpU5+yOypcg2N3kaqWJ74L/KqlIW9QioFd+4ZWjZtDfIAsSJRSv3PwASnTQ==",
+  "dgSpecHash": "weegaGyzcTcZiUQlnTfsl9d5ws/aYJWKK8uL+jhDZ3+C5AjeV0QTEaW29ah2Y63J+Xv4wHzCCiBHMSG8BVF64w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
