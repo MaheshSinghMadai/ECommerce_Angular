@@ -2,11 +2,14 @@ using Core.Interface;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Data;
+using WebAPI.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 // Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
