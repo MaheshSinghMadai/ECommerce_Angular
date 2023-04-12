@@ -1,5 +1,6 @@
 ﻿using Core.Interface;
 using Core.Model;
+using Core.Specification;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Data;
@@ -25,6 +26,8 @@ namespace WebAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProducts()
         {
+            var spec = new ProductsWithTypesAndBrandsSpecification();
+
             var products = await ProductsRepo.ListAllAsync();
 
             return Ok(products);
@@ -33,7 +36,9 @@ namespace WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
         {
-            var products = await ProductsRepo.GetByIdAsync(id);
+            var spec = new ProductsWithTypesAndBrandsSpecification(id);
+
+            var products = await ProductsRepo.GetEntityWithSpec(spec);
 
             return Ok(products);
         }
