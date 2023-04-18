@@ -89,3 +89,5 @@ C:\Users\Mahesh\Documents\WebAPI\WebAPI\bin\Debug\net6.0\Infrastructure.dll
 C:\Users\Mahesh\Documents\WebAPI\WebAPI\bin\Debug\net6.0\Core.pdb
 C:\Users\Mahesh\Documents\WebAPI\WebAPI\bin\Debug\net6.0\Infrastructure.pdb
 C:\Users\Mahesh\Documents\WebAPI\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mahesh\Documents\WebAPI\WebAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Mahesh\Documents\WebAPI\WebAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
