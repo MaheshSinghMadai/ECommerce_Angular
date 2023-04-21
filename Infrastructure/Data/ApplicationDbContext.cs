@@ -1,7 +1,8 @@
-﻿using Core.Model;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Core.Entities;
+using System.Reflection;
 
-namespace WebAPI.Data
+namespace Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -10,7 +11,13 @@ namespace WebAPI.Data
 
         }
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductType> ProductTypes { get; set; }
         public DbSet<ProductBrand> ProductBrands { get; set; }
+        public DbSet<ProductType> ProductTypes { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
+
     }
 }
