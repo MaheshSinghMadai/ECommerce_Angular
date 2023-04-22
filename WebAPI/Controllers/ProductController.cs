@@ -6,6 +6,7 @@ using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.DTO;
+using WebAPI.Helper;
 using static Core.Interface.IGenericRepository;
 
 namespace WebApplication1.Controllers
@@ -30,13 +31,19 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDTO>>> GetProducts()
+        public async Task<ActionResult<IReadOnlyList<Pagination<ProductToReturnDTO>>>> GetProducts(
+            [FromQuery] ProductSpecParam productParams)
         {
-            var spec = new ProductsWithTypesAndBrandsSpecification();
+            var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
+
+            var countSpec = new ProductsWithFiltersForCountSpecification(productParams);
             var products = await _productsRepo.ListAsync(spec);
+            var totalItems = await _productsRepo.CountAsync(spec);
+
             var data = _mapper.Map<IReadOnlyList<ProductToReturnDTO>>(products);
 
-            return Ok(data);
+            return Ok(new Pagination<ProductToReturnDTO>
+                (productParams.PageIndex, productParams.PageSize, totalItems, data));
         }
 
         [HttpGet("{id}")]

@@ -23,10 +23,10 @@ namespace Infrastructure.Data
         //    _db.Set<T>().Add(entity);
         //}
 
-        ////public async Task<int> CountAsync(ISpecification<T> spec)
-        ////{
-        ////    return await ApplySpecification(spec).CountAsync();
-        ////}
+        public async Task<int> CountAsync(ISpecification<T> spec)
+        {
+            return await ApplySpecification(spec).CountAsync();
+        }
 
         //public void Delete(T entity)
         //{

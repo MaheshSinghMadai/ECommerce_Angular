@@ -12,6 +12,14 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IProductRepository, ProductRepository>(); 
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolcy", policy =>
+    {
+        policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:7049");
+    });
+});
+    
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
@@ -33,7 +41,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");
 app.UseStaticFiles();
+
 app.UseAuthorization();
 
 app.MapControllers();
