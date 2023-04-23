@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { IProduct } from './models/product';
+import { IPagination } from './models/pagination';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
 
-  title = 'Tech Prasad';
+  title = 'Tech Commerce';
   products: any;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('https://localhost:7049/api/Product').subscribe((response: any) => {
-      this.products = response.data;
+    this.http.get('https://localhost:7049/api/Product').subscribe(
+      (response: any) => {
+        this.products = response.data;
     }, error => {
       console.log(error);
-    }
-    )
+    });
   }
   
 }
