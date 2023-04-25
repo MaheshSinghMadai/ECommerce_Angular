@@ -2,8 +2,8 @@
     position: absolute;
     min-height: 25px;
     max-height: 25px;
-    border-radius: 50%;
-    font-size: 1em;
+    padding:2px;
+    border-radius: 75%;
     background: cadetblue;
     color:white;
     text-align:center;
