@@ -3,8 +3,8 @@
     min-height: 25px;
     max-height: 25px;
     padding:2px;
-    border-radius: 75%;
-    background: cadetblue;
+    border-radius: 100%;
+    background: rgb(2, 31, 32);
     color:white;
     text-align:center;
     top: -10px;

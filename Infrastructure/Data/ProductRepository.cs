@@ -17,9 +17,9 @@ namespace Infrastructure.Data
             _db = db;
         }
 
-        public Task<Product> GetProductByIdAsync(int id)
+        public async Task<Product> GetProductByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _db.Products.FindAsync(id);
         }
 
         public async Task<IReadOnlyList<Product>> GetProductsAsync()
