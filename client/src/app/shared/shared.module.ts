@@ -6,8 +6,10 @@ import { PagerComponent } from './components/pager/pager.component';
 
 @NgModule({
   declarations: [
+  
+  
     PagingHeaderComponent,
-    PagerComponent
+          PagerComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { PagerComponent } from './components/pager/pager.component';
   ],
   exports:[
     PaginationModule,
-    PagingHeaderComponent
+    PagingHeaderComponent,
+    PagerComponent
   ]
 })
 export class SharedModule { }

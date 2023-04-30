@@ -3,6 +3,7 @@ using Infrastructure.Data;
 using Core.Interface;
 using static Core.Interface.IGenericRepository;
 using WebAPI.Helper;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -12,11 +13,6 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IProductRepository, ProductRepository>(); 
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
-
-//builder.Services.AddCors(p => p.AddPolicy("Corspolicy", builder =>
-//{
-//    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
-//}));
 
 builder.Services.AddCors(options =>
 {
@@ -31,7 +27,6 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -49,8 +44,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
-app.UseCors(MyAllowSpecificOrigins);
 app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "Content")),
+    RequestPath = "/Content"
+});
+
+app.UseCors(MyAllowSpecificOrigins);
+
 app.UseAuthorization();
 
 app.MapControllers();

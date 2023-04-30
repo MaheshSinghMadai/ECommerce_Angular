@@ -1,7 +1,4 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { IProduct } from './shared/models/product';
-import { IPagination } from './shared/models/pagination';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +8,10 @@ import { IPagination } from './shared/models/pagination';
 export class AppComponent implements OnInit{
 
   title = 'Tech Commerce';
-  constructor() {}
 
+  constructor() {}
   ngOnInit(): void {
-   
+
   }
   
 }

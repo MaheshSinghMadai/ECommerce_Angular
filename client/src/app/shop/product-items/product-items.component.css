@@ -1,7 +1,10 @@
+.card{
+    margin-top: 20px;
+}
 .btn-group{
-        width:100%;
+    width:100%;
 }
 
 .btn {
-    width : 50%;
+width : 50%;
 }

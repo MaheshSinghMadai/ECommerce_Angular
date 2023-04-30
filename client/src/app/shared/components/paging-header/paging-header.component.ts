@@ -12,7 +12,6 @@ export class PagingHeaderComponent implements OnInit {
   @Input() totalCount : number;
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
 }

@@ -5,9 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { CoreModule } from './core/core.module';
 import { ShopModule } from './shop/shop.module';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { ShopModule } from './shop/shop.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    CoreModule, 
+    CoreModule,
     ShopModule
   ],
   providers: [],

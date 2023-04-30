@@ -7,11 +7,10 @@ import { IProduct } from 'src/app/shared/models/product';
   styleUrls: ['./product-items.component.css']
 })
 export class ProductItemsComponent implements OnInit{
-
-  @Input() product?: IProduct;
   
-  constructor() {}
+  @Input() product: IProduct;
 
-  ngOnInit(): void {}
+  constructor() {}
+  ngOnInit() {}
 
 }
