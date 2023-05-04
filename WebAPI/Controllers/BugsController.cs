@@ -5,7 +5,7 @@ using WebAPI.Errors;
 
 namespace WebAPI.Controllers
 {
-    public class BugsController : Controller
+    public class BugsController : BaseApiController
     {
         private readonly ApplicationDbContext _context;
         public BugsController(ApplicationDbContext context)

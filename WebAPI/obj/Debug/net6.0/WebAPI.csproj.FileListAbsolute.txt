@@ -92,3 +92,5 @@ C:\Users\Mahesh\Documents\WebAPI\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
 C:\Users\Mahesh\Documents\WebAPI\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\Mahesh\Documents\WebAPI\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\Mahesh\Documents\WebAPI\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\Mahesh\Documents\WebAPI\WebAPI\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Mahesh\Documents\WebAPI\WebAPI\bin\Debug\net6.0\StackExchange.Redis.dll
