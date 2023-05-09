@@ -17,8 +17,7 @@ export interface IBasketItem{
 
 export class Basket implements IBasket {
     id = cuid();
-    items: IBasketItem[];
-
+    items: IBasketItem[] = [];
 }
 
 // export interface BasketTotals {
