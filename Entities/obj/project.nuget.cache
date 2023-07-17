@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "weegaGyzcTcZiUQlnTfsl9d5ws/aYJWKK8uL+jhDZ3+C5AjeV0QTEaW29ah2Y63J+Xv4wHzCCiBHMSG8BVF64w==",
+  "dgSpecHash": "n5oL+4NCxJXmRZ5T+A0Sd42jj0Aap4v/E9sR/ykBBDAG/nP0oiu4OHuu4UTgwhrrjkcElozQWNXd2UkBwgl8Dg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj",
+  "projectFilePath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

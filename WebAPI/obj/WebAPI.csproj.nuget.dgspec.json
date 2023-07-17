@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mahesh\\Documents\\WebAPI\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\Dell\\Documents\\ECommerAngular\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj": {
+    "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj",
-        "packagesPath": "C:\\Users\\Mahesh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mahesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,21 +55,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mahesh\\Documents\\WebAPI\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Mahesh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mahesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj": {
-                "projectPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj"
+              "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj": {
+                "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj"
               }
             }
           }
@@ -136,21 +136,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mahesh\\Documents\\WebAPI\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\Dell\\Documents\\ECommerAngular\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mahesh\\Documents\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Documents\\ECommerAngular\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\Mahesh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mahesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,17 +158,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj": {
-                "projectPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Entities\\Core.csproj"
+              "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj": {
+                "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj"
               },
-              "C:\\Users\\Mahesh\\Documents\\WebAPI\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Mahesh\\Documents\\WebAPI\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -225,7 +226,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

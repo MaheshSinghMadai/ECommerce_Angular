@@ -8,8 +8,8 @@ import { BehaviorSubject, map } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class BasketService {
 
+export class BasketService {
   baseUrl = environment.apiUrl;
   private basketSource = new BehaviorSubject<IBasket>(null);
   basket$ = this.basketSource.asObservable();
@@ -56,7 +56,6 @@ export class BasketService {
     }
     return items;
   }
-
 
   private createBasket(): IBasket {
     const basket = new Basket();
