@@ -190,3 +190,8 @@ C:\Users\Dell\Documents\ECommerAngular\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
 C:\Users\Dell\Documents\ECommerAngular\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\Dell\Documents\ECommerAngular\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\Dell\Documents\ECommerAngular\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

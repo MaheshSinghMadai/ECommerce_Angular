@@ -5,6 +5,7 @@ using static Core.Interface.IGenericRepository;
 using WebAPI.Helper;
 using Microsoft.Extensions.FileProviders;
 using StackExchange.Redis;
+using Infrastructure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -28,6 +29,11 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddDbContext<AppIdentityDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
 });
 
 builder.Services.AddSingleton<IConnectionMultiplexer>(c =>

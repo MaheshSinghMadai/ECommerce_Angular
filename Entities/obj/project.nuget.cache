@@ -1,8 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "n5oL+4NCxJXmRZ5T+A0Sd42jj0Aap4v/E9sR/ykBBDAG/nP0oiu4OHuu4UTgwhrrjkcElozQWNXd2UkBwgl8Dg==",
+  "dgSpecHash": "1OxnccJLJHJxrJMLKYMAj2m3yu6c61APS1dAETEbHJ65BOgY7fnZyOUxpm5/Koo6Ha36G49K6Pq8LOFPpmmsEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.20\\microsoft.aspnetcore.cryptography.internal.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.20\\microsoft.aspnetcore.cryptography.keyderivation.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.20\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.20\\microsoft.entityframeworkcore.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.20\\microsoft.entityframeworkcore.abstractions.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.20\\microsoft.entityframeworkcore.analyzers.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.20\\microsoft.entityframeworkcore.relational.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.20\\microsoft.extensions.identity.core.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.20\\microsoft.extensions.identity.stores.6.0.20.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
