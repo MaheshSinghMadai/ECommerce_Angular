@@ -195,3 +195,4 @@ C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.AspNetC
 C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Dell\Documents\ECommerAngular\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
