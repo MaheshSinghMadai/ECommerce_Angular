@@ -18,7 +18,7 @@ namespace WebAPI.Controllers
         private readonly ITokenService tokenService;
         private readonly IMapper mapper;
 
-        public AccountController( UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, 
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, 
             ITokenService tokenService, IMapper mapper)
         {
             this.userManager = userManager;
@@ -119,7 +119,10 @@ namespace WebAPI.Controllers
 
             if (result.Succeeded)
             {
-                return Ok(mapper.Map<Address, AddressDto>(user.Address));            }
-             }
+                return Ok(mapper.Map<Address, AddressDto>(user.Address));
+            }
+
+            return BadRequest("Problem updating the user");
+        }
     }
 }

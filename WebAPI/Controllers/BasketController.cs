@@ -2,6 +2,7 @@
 using Core.Entities;
 using Core.Interface;
 using Microsoft.AspNetCore.Mvc;
+using WebAPI.DTO;
 
 namespace WebAPI.Controllers
 {
@@ -24,9 +25,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasket basket)
+        public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasketDto basket)
         {
-            var customerBasket = _mapper.Map<CustomerBasket>(basket);
+            var customerBasket = _mapper.Map<CustomerBasketDto, CustomerBasket>(basket);
 
             var updatedBasket = await _basketRepository.UpdateBasketAsync(customerBasket);
 
