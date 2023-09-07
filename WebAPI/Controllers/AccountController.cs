@@ -37,7 +37,7 @@ namespace WebAPI.Controllers
             }
 
             var result = await signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
-            if (result.Succeeded)
+            if (!result.Succeeded)
             {
                 return Unauthorized(new ApiResponse(401));
             }
