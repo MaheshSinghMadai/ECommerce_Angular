@@ -12,27 +12,27 @@ namespace Infrastructure.Identity
     {
         public static async Task SeedUserAsync(UserManager<AppUser> _userManager)
         {
-            if(_userManager.Users.Any())
+            if (!_userManager.Users.Any())
             {
                 var user = new AppUser
                 {
-                    DisplayName = "Mahesh",
-                    Email = "maheshmadai977@gmail.com",
-                    UserName = "Mahesh",
+                    DisplayName = "mahesh",
+                    Email = "mahesh@test.com",
+                    UserName = "mahesh",
                     Address = new Address
                     {
-                        FirstName = "Tokha",
-                        LastName = "Dhapasi",
-                        Street = "Dhapasi",
-                        City = "Kathmandu",
-                        State = "Bagmati",
-                        ZipCode = "44600"
+                        FirstName = "Bob",
+                        LastName = "Bobbity",
+                        Street = "10 The street",
+                        City = "New York",
+                        State = "NY",
+                        ZipCode = "90210"
                     }
                 };
 
-                await _userManager.CreateAsync(user, "Zsoxfsq977#@");
+                await _userManager.CreateAsync(user, "Pa$$w0rd");
             }
-        }
 
+        }
     }
 }

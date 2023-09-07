@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj": {}
+    "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Entities\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj": {
+    "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Entities\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Entities\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj",
+        "projectPath": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Entities\\Core.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

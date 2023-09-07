@@ -35,7 +35,7 @@ namespace Infrastructure.Data
 
                 await db.SaveChangesAsync();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

@@ -1,12 +1,17 @@
 <div class="d-flex justify-content-center mt-5">
     <div class="col-3">
-      <form>
+      <form [formGroup]="loginForm" (ngSubmit)="OnSubmit()">
         <div class="text-center mb-4">
           <h1 class="mb-3">Login</h1>
         </div>
         
-        <!-- <app-text-input  [label]="'Email Address'"></app-text-input>
-        <app-text-input  [label]="'Password'" [type]="'password'"></app-text-input> -->
+        <div class="form-label-group mb-2">
+          <input formControlName="email" type="email" id="InputEmail" class="form-control" placeholder="Email Address">  
+        </div>
+        
+        <div class="form-label-group">
+          <input formControlName="password" type="password" id="inputPassword" class="form-control" placeholder="Password">         
+        </div>
   
         <div class="d-grid">
           <button  class="btn btn-lg btn-primary mt-3" type="submit">Sign in</button>

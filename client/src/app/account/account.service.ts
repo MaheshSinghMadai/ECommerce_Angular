@@ -19,7 +19,7 @@ export class AccountService {
 
   login(values : any){
     return this.http.post(this.baseUrl + 'account/login' , values).pipe(
-      map((user:IUser) => {
+      map((user: IUser) => {
         localStorage.setItem('token', user.token);
         this.currentUserSource.next(user);
       })

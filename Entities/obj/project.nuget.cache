@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1OxnccJLJHJxrJMLKYMAj2m3yu6c61APS1dAETEbHJ65BOgY7fnZyOUxpm5/Koo6Ha36G49K6Pq8LOFPpmmsEw==",
+  "dgSpecHash": "NUhLZy17I8OYCua8x840zfFbogYCD8AYZbYtI3xwQ4hZo3iTC0q8VZwWTHr3leboBXYzjnDlBiDI//5qVnlEDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj",
+  "projectFilePath": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Entities\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.20\\microsoft.aspnetcore.cryptography.internal.6.0.20.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.20\\microsoft.aspnetcore.cryptography.keyderivation.6.0.20.nupkg.sha512",

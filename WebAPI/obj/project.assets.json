@@ -4887,11 +4887,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\Documents\\ECommerAngular\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4902,18 +4902,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj": {
-              "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Entities\\Core.csproj"
+            "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Entities\\Core.csproj": {
+              "projectPath": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Entities\\Core.csproj"
             },
-            "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -4978,7 +4977,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

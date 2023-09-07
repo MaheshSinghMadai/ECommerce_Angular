@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S8UQSI72J/f3eHX0Qk5ueDi80S/kA1L5xlf8h4t4mk15oYFNT/TutIakXalzwjNkBgIEFhnabH5k+1YeShn51w==",
+  "dgSpecHash": "clh8PWxVm+g+D/YqpjCPy0ht5B2YjP+qRM3JkJR7lwIAqz35ZuafnCTEo3AB0q0WSsrtPlOy39gTVQif5Ym57g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\Documents\\ECommerAngular\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Dell\\Documents\\DotnetProjects\\ECommerAngular\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -31,29 +31,12 @@ builder.Services.AddCors(options =>
                       });
 });
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
-
-builder.Services.AddDbContext<AppIdentityDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
-});
-
-builder.Services.AddSingleton<IConnectionMultiplexer>(c =>
-{
-    var configuration = ConfigurationOptions.Parse(
-        builder.Configuration.GetConnectionString("Redis"), true);
-    return ConnectionMultiplexer.Connect(configuration); ;
-});
-
+builder.Services.ApplicationServices(builder.Configuration);
 builder.Services.AppIdentityServices(builder.Configuration);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 
 var app = builder.Build();
 
@@ -67,6 +50,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseStaticFiles();
+
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
@@ -82,14 +66,16 @@ app.MapControllers();
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
 //var loggerFactory = services.GetRequiredService<ILoggerFactory>();
-var context = services.GetRequiredService<ApplicationDbContext>(); 
 
+//seed AppDb data
+var context = services.GetRequiredService<ApplicationDbContext>();
+await context.Database.MigrateAsync();
+await StoreContextSeed.SeedAsync(context);
+
+//Seed Identity Db Data
 var userManager = services.GetRequiredService<UserManager<AppUser>>();
 var identityContext = services.GetRequiredService<AppIdentityDbContext>();
-
-await context.Database.MigrateAsync();
 await identityContext.Database.MigrateAsync();
-await StoreContextSeed.SeedAsync(context);
 await AppIdentityDbContextSeed.SeedUserAsync(userManager);
 
 app.Run();
