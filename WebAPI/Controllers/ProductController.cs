@@ -36,7 +36,7 @@ namespace WebApplication1.Controllers
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
 
-            var countSpec = new ProductsWithFiltersForCountSpecification(productParams);
+            //var countSpec = new ProductsWithFiltersForCountSpecification(productParams);
             var products = await _productsRepo.ListAsync(spec);
             var totalItems = await _productsRepo.CountAsync(spec);
 

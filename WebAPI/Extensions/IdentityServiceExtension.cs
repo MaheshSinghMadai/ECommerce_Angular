@@ -1,18 +1,17 @@
 ﻿using Core.Entities.Identity;
-using Infrastructure.Data;
 using Infrastructure.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 
 namespace WebAPI.Extensions
 {
     public static class IdentityServiceExtension
     {
-         public static IServiceCollection AppIdentityServices(this IServiceCollection services,
-             IConfiguration config)
+         public static IServiceCollection AppIdentityServices(this IServiceCollection services,IConfiguration config)
         {
             var builder = services.AddIdentityCore<AppUser>();
 
@@ -38,7 +37,6 @@ namespace WebAPI.Extensions
                     };
                 });
 
-            services.AddAuthentication();
 
             return services;
         }

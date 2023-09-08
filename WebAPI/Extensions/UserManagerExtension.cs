@@ -5,20 +5,22 @@ using System.Security.Claims;
 
 namespace WebAPI.Extensions
 {
-    public static class UserManagerExtension
+    public static class UserManagerExtensions
     {
-        public static async Task<AppUser> FindByUserByClaimsPrincipalWithAddressAsync (this UserManager<AppUser> input, ClaimsPrincipal User) 
+        public static async Task<AppUser> FindByUserByClaimsPrincipalWithAddressAsync(this UserManager<AppUser> userManager,
+            ClaimsPrincipal user)
         {
-            var email = User.FindFirstValue(ClaimTypes.Email);
+            var email = user.FindFirstValue(ClaimTypes.Email);
 
-            return await input.Users.Include(x => x.Address).SingleOrDefaultAsync(x => x.Email == email);
+            return await userManager.Users.Include(x => x.Address)
+                .SingleOrDefaultAsync(x => x.Email == email);
         }
 
-        public static async Task<AppUser> FindByEmailFromClaimsPrincipal (this UserManager<AppUser> input, ClaimsPrincipal User)
+        public static async Task<AppUser> FindByEmailFromClaimsPrincipal(this UserManager<AppUser> userManager,
+            ClaimsPrincipal user)
         {
-            var email = User.FindFirstValue(ClaimTypes.Email);
-
-            return await input.Users.SingleOrDefaultAsync(x => x.Email == email);
+            return await userManager.Users
+                .SingleOrDefaultAsync(x => x.Email == user.FindFirstValue(ClaimTypes.Email));
         }
     }
 }
