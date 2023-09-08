@@ -9,7 +9,6 @@ import { HomeModule } from './home/home.module';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
-
 @NgModule({
   declarations: [
     AppComponent,

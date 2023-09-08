@@ -16,14 +16,16 @@ export class NavBarComponent implements OnInit{
   basket$: Observable<IBasket>;
   currentUser$: Observable<IUser>;
 
-
-
   constructor(public basketService: BasketService, private accountService : AccountService) {}
+
   ngOnInit(){
     this.basket$ = this.basketService.basket$;
     this.currentUser$ = this.accountService.currentUser$;
   }
 
+  logout(){
+    this.accountService.logout();
+  }
   getCount(items: IBasketItem[]=[]) {
     return items.reduce((sum, item) => sum + item.quantity, 0);
   }

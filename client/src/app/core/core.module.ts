@@ -15,7 +15,6 @@ import { BreadcrumbModule } from 'xng-breadcrumb';
     NavBarComponent,
     TestErrorComponent,
     NotFoundComponent,
-
     ServerErrorComponent,
     SectionHeaderComponent
   ],

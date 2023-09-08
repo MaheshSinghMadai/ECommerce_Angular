@@ -11,7 +11,7 @@ export class SectionHeaderComponent implements OnInit{
   
   breadcrumbs$ : Observable<any[]>;
   
-  constructor (private bcService: BreadcrumbService){}
+  constructor (public bcService: BreadcrumbService){}
 
   ngOnInit(): void {
     this.breadcrumbs$ = this.bcService.breadcrumbs$;

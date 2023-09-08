@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, map } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -17,11 +17,30 @@ export class AccountService {
 
   constructor(private http: HttpClient, private router: Router) { }
 
+  getCurrentUserValue(){
+    return this.currentUserSource.value;
+  }
+  
+  loadCurrentUser(token: string){
+    let headers = new HttpHeaders();
+    headers = headers.set('Authorization',`Bearer${token}`);
+
+    return this.http.get<IUser>(this.baseUrl + 'account' , {headers}).pipe(
+      map(user => {
+        if(user){
+          localStorage.setItem('token', user.token);
+          this.currentUserSource.next(user);
+        } 
+      }
+    ))
+  }
+
   login(values : any){
     return this.http.post(this.baseUrl + 'account/login' , values).pipe(
-      map((user: IUser) => {
+      map((user : IUser) => {
         localStorage.setItem('token', user.token);
         this.currentUserSource.next(user);
+        return user;
       })
     )
   }
@@ -31,6 +50,7 @@ export class AccountService {
       map((user:IUser) => {
         localStorage.setItem('token', user.token);
         this.currentUserSource.next(user);
+        
       })
     )
   }
