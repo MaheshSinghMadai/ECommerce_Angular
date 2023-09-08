@@ -8,7 +8,6 @@ import { OrderTotalsComponent } from './components/order-totals/order-totals.com
 import { ReactiveFormsModule } from '@angular/forms';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 
-
 @NgModule({
   declarations: [
     PagingHeaderComponent,

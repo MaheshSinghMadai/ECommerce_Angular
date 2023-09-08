@@ -7,16 +7,33 @@
         
         <div class="form-label-group mb-2">
           <input formControlName="email" type="email" id="InputEmail" class="form-control" placeholder="Email Address">  
+          <span class="text-danger" 
+            *ngIf="loginForm.get('email').invalid 
+            && loginForm.get('email').touched 
+            && loginForm.get('email').errors['required']">
+            Email Address is required 
+          </span>
         </div>
         
         <div class="form-label-group">
           <input formControlName="password" type="password" id="inputPassword" class="form-control" placeholder="Password">         
+          <span class="text-danger" 
+            *ngIf="loginForm.get('password').invalid 
+            && loginForm.get('password').touched
+            && loginForm.get('password').errors['required']">Password is required 
+          </span>
         </div>
   
         <div class="d-grid">
-          <button  class="btn btn-lg btn-primary mt-3" type="submit">Sign in</button>
+          <button [disabled]="loginForm.invalid" class="btn btn-lg btn-primary mt-3" type="submit">Sign in</button>
         </div>
       </form>
     </div>
-  
+    <div class="col-4">
+      <p>Form status: {{loginForm.status}}</p>
+      <p>Email status: {{loginForm.get('email').status}}</p>
+      <p>Email touched: {{loginForm.get('email').touched}}</p>
+      <p>Email dirty: {{loginForm.get('email').dirty}}</p>
+      <pre>{{loginForm.value | json}}</pre>
+    </div>
   </div>

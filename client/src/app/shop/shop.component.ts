@@ -34,6 +34,7 @@ export class ShopComponent implements OnInit {
   }
   
   getProducts(){
+    console.log(this.shopParams)
   this.shopService.getProducts(this.shopParams).subscribe(
     response => {
        this.products = response.data;
@@ -76,8 +77,11 @@ export class ShopComponent implements OnInit {
       this.getProducts();
     }
 
-    onSortSelected(sort: string){
-      this.shopParams.sort = sort;
+    onSortSelected(event : Event){
+      const selectedValue = (event.target as HTMLSelectElement).value;
+      console.log(selectedValue);
+      this.shopParams.sort = selectedValue;
+      console.log(this.shopParams);
       this.getProducts();
     }
 

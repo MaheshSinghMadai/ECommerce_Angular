@@ -52,4 +52,8 @@ export class ShopService {
     return this.Http.get<IProductType[]>(this.baseUrl + 'Product/types');
   }
 
+  // getShopParams(){
+  //   return this.ShopParams;
+  // }
+
 }
