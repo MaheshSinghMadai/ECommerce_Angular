@@ -52,14 +52,14 @@ export class BasketService {
   }
 
   private addOrUpdateItem(items: IBasketItem[], itemToAdd: IBasketItem, quantity: number): IBasketItem[] {
-    const index = items.findIndex(x => x.id === itemToAdd.id);
-    if (index === -1) 
+    const item = items.find(x => x.id === itemToAdd.id);
+    if (item) 
     {
-      itemToAdd.quantity += quantity;
-      items.push(itemToAdd);
+      item.quantity += quantity;   
     }
     else {
-      items[index].quantity += quantity;
+      itemToAdd.quantity += quantity;
+      items.push(itemToAdd);
       
     }
     return items;
