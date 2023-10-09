@@ -31,6 +31,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
+
         public async Task<ActionResult<IReadOnlyList<Pagination<ProductToReturnDTO>>>> GetProducts(
             [FromQuery] ProductSpecParam productParams)
         {
