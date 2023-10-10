@@ -15,7 +15,8 @@ export class BasketSummaryComponent {
   constructor(public basketService: BasketService) {}
 
   addBasketItem(item: BasketItem) {
-    this.addItem.emit(item)
+    this.addItem.emit(item);
+    console.log(item);
   }
 
   removeBasketItem(id: number, quantity = 1) {

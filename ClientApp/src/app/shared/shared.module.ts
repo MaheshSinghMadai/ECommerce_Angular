@@ -7,6 +7,7 @@ import { TextInputComponent } from './text-input/text-input.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { OrderTotalsComponent } from './components/order-totals/order-totals.component';
 import { BasketSummaryComponent } from './basket-summary/basket-summary.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { BasketSummaryComponent } from './basket-summary/basket-summary.componen
     PaginationModule.forRoot(),
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   exports:[
     PaginationModule,

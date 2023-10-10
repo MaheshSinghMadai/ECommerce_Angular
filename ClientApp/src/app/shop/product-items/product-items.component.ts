@@ -5,17 +5,12 @@ import { Product } from 'src/app/shared/models/product';
 @Component({
   selector: 'app-product-items',
   templateUrl: './product-items.component.html',
-  styleUrls: ['./product-items.component.css']
+  styleUrls: ['./product-items.component.css'],
 })
-export class ProductItemsComponent implements OnInit {
+export class ProductItemsComponent {
+  @Input() product: Product | any;
 
-@Input() product: Product | any ;
-
-constructor(private basketService: BasketService) { }
-  ngOnInit(): void {
-    
-  }
-
+  constructor(private basketService: BasketService) {}
   addItemToBasket() {
     this.product && this.basketService.addItemToBasket(this.product);
   }
