@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import {  CarouselModule } from 'ngx-bootstrap/carousel';
 import { ReactiveFormsModule } from '@angular/forms';
-import { TextInputComponent } from './components/text-input/text-input.component';
+import { TextInputComponent } from './text-input/text-input.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { OrderTotalsComponent } from './components/order-totals/order-totals.component';
+import { BasketSummaryComponent } from './basket-summary/basket-summary.component';
 
 
 @NgModule({
   declarations: [
-    TextInputComponent
+    TextInputComponent,
+    OrderTotalsComponent,
+    BasketSummaryComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +26,9 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     PaginationModule,
     CarouselModule,
     ReactiveFormsModule,
-    BsDropdownModule
+    BsDropdownModule,
+    OrderTotalsComponent,
+    BasketSummaryComponent
   ]
 })
 export class SharedModule { }
