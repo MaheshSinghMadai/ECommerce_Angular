@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountService } from './account/account-service.service';
 
 
 @Component({
@@ -9,10 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit { 
   title = 'Ecommerce';
 
-  constructor() { }
+  constructor(private accountService: AccountService) { }
   ngOnInit(): void {
-   
+
   }
+  
   
 }
 
