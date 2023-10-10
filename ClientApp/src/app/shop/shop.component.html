@@ -1,10 +1,11 @@
-<div class="container " style="margin-top:100px">
-    <div class="row">
+<div class="container " style="margin-top:20px">
+    <div class="row" *ngIf="types.length > 0 && brands.length > 0">
         <section class="col-3">
             <h5 class="text-warming ml-3">Sort</h5>
             <select class="custom-select" (change)="onSortSelected($event.target.value)">
                 <option *ngFor="let sort of sortOptions"
-                [value]="sort.value">
+                    [selected]="shopParams.sort === sort.value"
+                    [value]="sort.value">
                     {{sort.name}}
                 </option>
         
@@ -34,7 +35,7 @@
         </section>
 
         <section class="col-9">
-            <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-between align-items-center pb-3">
                 <header>
                     <span *ngIf="totalCount && totalCount > 0">
                         Showing 
@@ -50,7 +51,7 @@
                             There are <strong>0</strong> results for this filter
                         </span>
                 </header>
-                <div class="form-inline mt-2">
+                <div class="form-inline d-flex mt-2">
                     <input type="text" (keyup.enter)="onSearch()" class="form-control" #search style="width:300px;" placeholder="Search products">
                     <button class="btn btn-outline-primary ml-2 my-2" (click)="onSearch()">Search</button>
                     <button class="btn btn-outline-success ml-2 my-2" (click)="onReset()">Reset</button>

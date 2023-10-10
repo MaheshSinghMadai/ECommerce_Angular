@@ -31,13 +31,13 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-
+        [Route("[action]")]
         public async Task<ActionResult<IReadOnlyList<Pagination<ProductToReturnDTO>>>> GetProducts(
             [FromQuery] ProductSpecParam productParams)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
 
-            //var countSpec = new ProductsWithFiltersForCountSpecification(productParams);
+            var countSpec = new ProductsWithFiltersForCountSpecification(productParams);
             var products = await _productsRepo.ListAsync(spec);
             var totalItems = await _productsRepo.CountAsync(spec);
 
@@ -48,6 +48,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet("{id}")]
+        
         public async Task<ActionResult<ProductToReturnDTO>> GetProductById(int id)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
