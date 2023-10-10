@@ -79,5 +79,9 @@ export class AccountService {
   getToken(){
   return localStorage.getItem('token');
   }
+
+  checkEmailExists(email: string) {
+    return this.http.get<boolean>(this.baseUrl + 'account/emailExists?email=' + email);
+  }
 }
 

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, AsyncValidatorFn, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AccountService } from '../account-service.service';
 import { Router } from '@angular/router';
+import { debounceTime, finalize, map, switchMap, take, timer } from 'rxjs';
 
 @Component({
   selector: 'app-register',
@@ -10,7 +11,8 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
-
+  errors: string[];
+  
   constructor(
     private fb: FormBuilder, 
     private accountService: AccountService,
@@ -35,8 +37,25 @@ export class RegisterComponent implements OnInit {
       },
       error => {
         console.log(error);
+        this.errors = error.errors;
       }
     );
+  }
+
+  validateEmailNotTaken(): AsyncValidatorFn {
+    return (control: AbstractControl) => {
+      return control.valueChanges.pipe(
+        debounceTime(1000),
+        take(1),
+        switchMap(() => {
+          return this.accountService.checkEmailExists(control.value).pipe(
+            map(result => result ? {emailExists: true} : null),
+            finalize(() => control.markAsTouched())
+          )
+        })
+      )
+
+    }
   }
   
 
