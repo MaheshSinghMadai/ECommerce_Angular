@@ -47,8 +47,7 @@ namespace WebApplication1.Controllers
                 (productParams.PageIndex, productParams.PageSize, totalItems, data));
         }
 
-        [HttpGet("{id}")]
-        
+        [HttpGet("{id}")] 
         public async Task<ActionResult<ProductToReturnDTO>> GetProductById(int id)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
